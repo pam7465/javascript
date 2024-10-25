@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다크 라이트</title>
     <style>
-        /* 야간 화면 */
-        .night{display:none;}
-        .day{display:block;}
-        body{background-color:black;}
-        ol,h2,p{color:white;}
-
-        /* 주간 화면 */
         .night{display:block;}
         .day{display:none;}
+
+        /* 야간 화면 */
+        /* .night{display:none;}
+        .day{display:block;}
+        body{background-color:black;}
+        ol,h2,p{color:white;} */
+
+        /* 주간 화면 */
+        /* .night{display:block;}
+        .day{display:none;}
         body{background-color:white;}
-        ol,h2,p{color:black;}
+        ol,h2,p{color:black;} */
 
     </style>
 </head>
@@ -33,7 +36,22 @@
     
 
     <script>
-        
+        // 야간화면, 'night'버튼 클릭했을때 실행될 스크립트
+        document.querySelector('.night').style.display = 'none';
+        document.querySelector('.day').style.display = 'block';
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('ol').style.color = 'white';
+        document.querySelector('h2').style.color = 'white';
+        document.querySelector('p').style.color = 'white';
+
+
+        //주간화면, 'day'버튼 클릭했을때 실행될 스크립트 
+        document.querySelector('.night').style.display = 'block';
+        document.querySelector('.day').style.display = 'none';
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('ol').style.color = 'black';
+        document.querySelector('h2').style.color = 'black';
+        document.querySelector('p').style.color = 'black';
     </script>
 </body>
 </html>
