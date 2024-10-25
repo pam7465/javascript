@@ -36,9 +36,17 @@
     
 
     <script>
+        // "night" 버튼 클릭 이벤트
+        document.querySelector('.night').onclick = function(){
 
-        
-        // 야간화면, 'night'버튼 클릭했을때 실행될 fnNight()
+        };
+
+        // "day" 버튼 클릭 이벤트
+        document.querySelector('.day').onclick = function(){
+            
+        }
+
+        // 야간화면 fnNight()
         function fnNight(){
             document.querySelector('.night').style.display = 'none';
             document.querySelector('.day').style.display = 'block';
@@ -48,7 +56,7 @@
             document.querySelector('p').style.color = 'white';
         }
 
-        //주간화면, 'day'버튼 클릭했을때 실행될 fnDay() 
+        //주간화면 fnDay() 
         function fnDay(){
             document.querySelector('.night').style.display = 'block';
             document.querySelector('.day').style.display = 'none';
