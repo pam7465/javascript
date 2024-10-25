@@ -4,11 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>다크 라이트</title>
+    <style>
+        /* 야간 화면 */
+        .night{display:none;}
+        .day{display:block;}
+        body{background-color:black;}
+        ol,h2,p{color:white;}
+
+        /* 주간 화면 */
+        .night{display:block;}
+        .day{display:none;}
+        body{background-color:white;}
+        ol,h2,p{color:black;}
+
+    </style>
 </head>
 <body>
     <h1><a href="#">WEB</a></h1>
-    <input type="button" value="night">
-    <input type="button" value="day">
+    <input class="night" type="button" value="night">
+    <input class="day" type="button" value="day">
     <ol>
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a></li>
