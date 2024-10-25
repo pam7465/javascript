@@ -36,22 +36,27 @@
     
 
     <script>
-        // 야간화면, 'night'버튼 클릭했을때 실행될 스크립트
-        document.querySelector('.night').style.display = 'none';
-        document.querySelector('.day').style.display = 'block';
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('ol').style.color = 'white';
-        document.querySelector('h2').style.color = 'white';
-        document.querySelector('p').style.color = 'white';
 
+        
+        // 야간화면, 'night'버튼 클릭했을때 실행될 fnNight()
+        function fnNight(){
+            document.querySelector('.night').style.display = 'none';
+            document.querySelector('.day').style.display = 'block';
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('ol').style.color = 'white';
+            document.querySelector('h2').style.color = 'white';
+            document.querySelector('p').style.color = 'white';
+        }
 
-        //주간화면, 'day'버튼 클릭했을때 실행될 스크립트 
-        document.querySelector('.night').style.display = 'block';
-        document.querySelector('.day').style.display = 'none';
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('ol').style.color = 'black';
-        document.querySelector('h2').style.color = 'black';
-        document.querySelector('p').style.color = 'black';
+        //주간화면, 'day'버튼 클릭했을때 실행될 fnDay() 
+        function fnDay(){
+            document.querySelector('.night').style.display = 'block';
+            document.querySelector('.day').style.display = 'none';
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('ol').style.color = 'black';
+            document.querySelector('h2').style.color = 'black';
+            document.querySelector('p').style.color = 'black';
+        }
     </script>
 </body>
 </html>
